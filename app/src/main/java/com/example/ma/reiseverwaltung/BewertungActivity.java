@@ -18,7 +18,9 @@ public class BewertungActivity extends ActionBarActivity {
         m_Reiseverwaltung = ((Reiseverwaltung) getApplicationContext());
 
         m_TxtComment = (EditText) findViewById(R.id.txtComment);
-        m_TxtComment.setText(m_Reiseverwaltung.Kontaktdaten.nachname);
+
+
+
     }
 
 

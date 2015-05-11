@@ -7,14 +7,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
+import com.squareup.okhttp.OkHttpClient;
 
 public class    MainActivity extends ActionBarActivity {
     private Reiseverwaltung m_Reiseverwaltung;
     private EditText m_TxtReisenummer;
 
     public void BtnReiseBewertenClick(View view) {
-        m_Reiseverwaltung.Kontaktdaten.nachname = m_TxtReisenummer.getText().toString();
 
         Intent intent = new Intent(MainActivity.this,BewertungActivity.class);
         startActivity(intent);

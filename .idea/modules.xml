@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Reiseverwaltung.iml" filepath="$PROJECT_DIR$/Reiseverwaltung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReiseverwaltungsApp.iml" filepath="$PROJECT_DIR$/ReiseverwaltungsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
-

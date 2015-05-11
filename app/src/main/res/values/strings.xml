@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Reiseverwaltung</string>
-
     <string name="welcome">Willkommen in der Reisebewertungssoftware</string>
     <string name="action_settings">Settings</string>
 </resources>

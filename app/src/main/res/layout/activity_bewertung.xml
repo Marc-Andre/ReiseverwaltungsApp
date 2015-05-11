@@ -5,17 +5,18 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:id="@+id/R">
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/barHotel"
-            android:layout_marginTop="39dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:numStars="5" />
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,32 +26,18 @@
             android:id="@+id/textView3"
             android:paddingLeft="8dp"
             android:gravity="center"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignBottom="@+id/barHotel"
-            android:layout_alignTop="@+id/barHotel" />
+            android:layout_alignParentStart="true" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/barZimmer"
-            android:layout_below="@+id/barHotel"
-            android:layout_alignLeft="@+id/barHotel"
-            android:layout_alignStart="@+id/barHotel"
-            android:numStars="5" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Zimmer"
-            android:id="@+id/textView4"
-            android:paddingLeft="8dp"
-            android:gravity="center"
-            android:layout_below="@+id/textView3"
+            android:numStars="5"
+            android:layout_below="@+id/textView4"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_above="@+id/ratingBar" />
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,34 +47,33 @@
             android:paddingLeft="8dp"
             android:gravity="center"
             android:id="@+id/textView5"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_above="@+id/ratingBar2"
-            android:layout_below="@+id/textView4" />
+            android:layout_below="@+id/barZimmer"
+            android:layout_alignLeft="@+id/ratingBar2"
+            android:layout_alignStart="@+id/ratingBar2" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ratingBar"
-            android:layout_below="@+id/barZimmer"
-            android:layout_alignRight="@+id/barZimmer"
-            android:layout_alignEnd="@+id/barZimmer" />
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ratingBar2"
-            android:layout_below="@+id/ratingBar"
-            android:layout_alignRight="@+id/ratingBar"
-            android:layout_alignEnd="@+id/ratingBar" />
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/ratingBar3"
+            android:layout_alignStart="@+id/ratingBar3" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ratingBar3"
-            android:layout_below="@+id/ratingBar2"
-            android:layout_alignRight="@+id/ratingBar2"
-            android:layout_alignEnd="@+id/ratingBar2" />
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -97,31 +83,17 @@
             android:id="@+id/textView6"
             android:paddingLeft="8dp"
             android:gravity="center"
-            android:layout_below="@+id/textView5"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_above="@+id/ratingBar3" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Gastronmie"
-            android:id="@+id/textView7"
-            android:paddingLeft="8dp"
-            android:gravity="center"
-            android:layout_below="@+id/textView6"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignBottom="@+id/ratingBar3" />
+            android:layout_below="@+id/ratingBar"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ratingBar4"
-            android:layout_below="@+id/ratingBar3"
-            android:layout_alignLeft="@+id/ratingBar3"
-            android:layout_alignStart="@+id/ratingBar3" />
+            android:layout_below="@+id/textView8"
+            android:layout_alignRight="@+id/textView8"
+            android:layout_alignEnd="@+id/textView8" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,19 +103,18 @@
             android:id="@+id/textView8"
             android:paddingLeft="8dp"
             android:gravity="center"
-            android:layout_alignBottom="@+id/ratingBar4"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/ratingBar3" />
+            android:layout_below="@+id/ratingBar3"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bewertung abgeben"
             android:id="@+id/btnSendBewertung"
-            android:layout_marginBottom="65dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -151,10 +122,32 @@
             android:inputType="textMultiLine"
             android:ems="10"
             android:id="@+id/txtComment"
+            android:hint="Kommentar"
             android:layout_below="@+id/ratingBar4"
-            android:layout_alignRight="@+id/ratingBar4"
-            android:layout_alignEnd="@+id/ratingBar4"
-            android:hint="Kommentar" />
+            android:layout_alignLeft="@+id/ratingBar4"
+            android:layout_alignStart="@+id/ratingBar4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Zimmer"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/barHotel"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_alignEnd="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Gastronmie"
+            android:id="@+id/textView7"
+            android:paddingLeft="8dp"
+            android:gravity="center"
+            android:layout_below="@+id/ratingBar2"
+            android:layout_alignLeft="@+id/ratingBar2"
+            android:layout_alignStart="@+id/ratingBar2" />
 
     </RelativeLayout>
 </LinearLayout>
